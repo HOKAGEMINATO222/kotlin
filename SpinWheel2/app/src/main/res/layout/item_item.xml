@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/btn_add_item"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/color_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#CE4FCE"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                      "
+            android:padding="16dp"
+        android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/name_item"
+        android:layout_marginStart="20dp"
+        android:textSize="25dp"
+        android:text="YES"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:layout_marginEnd="10dp"
+        android:id="@+id/eidt_item"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_edit_24"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:layout_marginEnd="10dp"
+        android:id="@+id/delete_item"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_delete_24"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

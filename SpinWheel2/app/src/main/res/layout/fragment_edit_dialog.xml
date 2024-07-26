@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.EditDialogFragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_close_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/etItemName"
+        android:padding="13dp"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btn_color_item"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@null"
+            android:fontFamily="sans-serif"
+            android:text="Background color"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:id="@+id/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@null"
+            android:fontFamily="sans-serif"
+            android:text="Text color"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:id="@+id/btnDelete"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@drawable/btn_delete"
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:id="@+id/btnSave"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button_background"
+            android:fontFamily="sans-serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+
+
+</LinearLayout>

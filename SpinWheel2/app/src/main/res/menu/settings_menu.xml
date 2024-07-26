@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/duration"
+            android:title="Duration"
+            android:icon="@drawable/baseline_access_duration_24" />
+
+        <item android:id="@+id/speed"
+            android:title="Speed"
+            android:icon="@drawable/baseline_speed_24" />
+
+        <item android:id="@+id/music"
+            android:title="Music"
+            android:icon="@drawable/baseline_music_note_24" />
+
+        <item android:id="@+id/stop"
+            android:title="Stop"
+            android:icon="@drawable/baseline_stop_circle_24" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/language"
+            android:title="Language"
+            android:icon="@drawable/baseline_language_24" />
+
+        <item android:id="@+id/notification"
+            android:title="Notifications"
+            android:icon="@drawable/baseline_notifications_24" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/exit"
+            android:title="Exit"
+            android:icon="@drawable/baseline_exit_to_app_24" />
+
+    </group>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.spinwheel2.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addRoulettesFragment"
+            app:destination="@id/addRoulettesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editRoulettesFragment"
+            app:destination="@id/editRoulettesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRoulettesFragment"
+        android:name="com.example.spinwheel2.Fragment.AddRoulettesFragment"
+        android:label="fragment_add_roulettes"
+        tools:layout="@layout/fragment_add_roulettes">
+        <action
+            android:id="@+id/action_addRoulettesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRoulettesFragment"
+        android:name="com.example.spinwheel2.Fragment.EditRoulettesFragment"
+        android:label="Edit Roulettes">
+        <argument
+            android:name="roulette"
+            app:argType="com.example.spinwheel2.Model.Roulettes" />
+    </fragment>
+</navigation>

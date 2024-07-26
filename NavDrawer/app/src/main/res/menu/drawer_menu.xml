@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_cycle"
+            android:icon="@drawable/icon_bicycle"
+            android:title="@string/cycling" />
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/bus_icon"
+            android:title="@string/bus" />
+        <item
+            android:id="@+id/nav_plane"
+            android:icon="@drawable/icon_plane"
+            android:title="@string/plane" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="@string/login" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_icon"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="@string/logout" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate_icon"
+                android:title="@string/rate_us" />
+        </menu>
+    </item>
+</menu>

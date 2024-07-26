@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragment.HomeFragment">
+
+
+
+
+
+    <!-- Left Drawer -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/bg1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Left Drawer Button -->
+            <ImageButton
+                android:id="@+id/btnOpenLeftDrawer"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_settings_24"
+                android:text="Open Left" />
+
+            <!-- Main content -->
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/roulette_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Home Fragment"
+                android:textSize="30sp" />
+
+
+            <!-- Right Drawer Button -->
+            <ImageButton
+                android:id="@+id/btnOpenRightDrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_format_list_bulleted_24"
+                android:text="Open Right" />
+
+        </LinearLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/animationView1"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            android:elevation="15dp"
+            android:layout_marginTop="-350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/firework2"
+            tools:ignore="MissingConstraints" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="gone"
+            android:id="@+id/animationView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="-30dp"
+            android:elevation="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/firework1"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/btn_result"
+            android:id="@+id/result"
+            android:elevation="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loves a lot"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="-100dp"
+            android:background="@drawable/circle_bg"
+            android:src="@drawable/baseline_replay_24"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+        <com.bluehomestudio.luckywheel.LuckyWheel
+            android:id="@+id/lwv"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-100dp"
+            app:arrow_image="@drawable/arrow_icon"
+            app:background_color="#E98161"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_replay"
+            android:src="@drawable/baseline_replay_24"
+            app:layout_constraintBottom_toBottomOf="@+id/lwv"
+            app:layout_constraintEnd_toEndOf="@+id/lwv"
+            app:layout_constraintStart_toStartOf="@+id/lwv"
+            app:layout_constraintTop_toTopOf="@+id/lwv" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/circle_background"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/baseline_add_24" />
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/baseline_edit_24" />
+
+            <ImageButton
+                android:visibility="gone"
+                android:id="@+id/share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/baseline_share_24" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/setting_nav"
+        app:menu="@menu/settings_menu"
+        app:headerLayout="@layout/setting_header"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/roulettes_nav"
+        app:menu="@menu/roulettes_menu"
+        app:headerLayout="@layout/roulettes_header"
+        android:layout_gravity="end"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <!-- Container để chứa các view khác -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- View chứa RecyclerView -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="130dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/roulettesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

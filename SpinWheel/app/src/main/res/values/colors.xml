@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#FF0000</color> <!-- Đỏ -->
+    <color name="color2">#FFA500</color> <!-- Cam -->
+    <color name="color3">#FFFF00</color> <!-- Vàng -->
+    <color name="color4">#008000</color> <!-- Xanh lá -->
+    <color name="color5">#0000FF</color> <!-- Xanh dương -->
+    <color name="color6">#4B0082</color> <!-- Màu chàm -->
+    <color name="color7">#8B00FF</color> <!-- Tím -->
+
+
+</resources>

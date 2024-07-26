@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="190dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/travel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Traveling"
+        android:textSize="24sp"
+        app:fontFamily="@font/aclonica" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.taimoorsikander.com"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        app:fontFamily="@font/aclonica" />
+
+</LinearLayout>
